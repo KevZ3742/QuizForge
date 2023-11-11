@@ -27,10 +27,18 @@ button {
     font-family: 'Ubuntu Mono', monospace;
     background-color: #a9288a;
     color: white;
-    border: 2px solid transparent; /* Set the border to transparent */
+    border: 2px solid transparent;
     border-image: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00);
     border-image-slice: 1;
     padding: 8px 16px;
     margin: 5px;
-  }
-  
+    transition: background-color 0.3s; /* Add a transition for smooth color change */
+}
+
+button:hover {
+    background-color: #8a196d; /* Darken the button on hover */
+}
+
+button:active {
+    background-color: #ff0073; /* Lighten the button when clicked */
+}
