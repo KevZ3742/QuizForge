@@ -85,3 +85,7 @@ async function generateQuestions(text, count){
   }
 
 }
+
+document.getElementById("generateButton").onclick = function () { generateQuestions("Print hellow world", 2) } ;
+
+document.getElementById("printButton").onclick = function () {window.print()};
